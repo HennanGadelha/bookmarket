@@ -6,7 +6,7 @@ import javax.persistence.Entity
 import javax.persistence.Id
 
 @Entity
-class Customer(val name: String, email: String, cpf: String) {
+class Customer(val name: String, val email: String, val cpf: String) {
 
     @Id
     val id: UUID = UUID.randomUUID()
