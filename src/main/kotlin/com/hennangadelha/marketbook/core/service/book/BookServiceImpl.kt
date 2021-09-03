@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component
 @Component
 class BookServiceImpl(val bookRepositoryPort: BookRepositoryPort) : BookServicePort {
 
-    //    override fun create(book: Book): Book = bookRepository.create(book)
+
     override fun create(book: Book) {
        bookRepositoryPort.create(BookConverter.toBookEntity(book))
     }

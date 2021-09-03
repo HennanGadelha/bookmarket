@@ -24,7 +24,6 @@ class CustomerController(val customerServicePort: CustomerServicePort) {
 
         return ResponseEntity<CustomerResponse>(customerResponse, HttpStatus.CREATED)
 
-
     }
 
 

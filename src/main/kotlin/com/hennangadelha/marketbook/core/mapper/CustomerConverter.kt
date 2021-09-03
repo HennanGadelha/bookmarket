@@ -19,7 +19,7 @@ class CustomerConverter {
         fun customerRequestToCustomer(request: CustomerRequest) =
             Customer(request.name, request.email, request.cpf)
 
-        fun toCustomerResponse(customer: Unit) =
+        fun toCustomerResponse(customer: Customer) =
             CustomerResponse(customer.id, customer.name, customer.email, customer.cpf)
     }
 

@@ -4,5 +4,5 @@ import com.hennangadelha.marketbook.core.models.customer.Customer
 
 interface CustomerServicePort {
 
-    fun create(customer: Customer)
+    fun create(customer: Customer) : Customer
 }
